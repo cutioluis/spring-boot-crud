@@ -1,19 +1,20 @@
-package com.example.projectdemo.models.entity;
+package com.example.projectdemo.models.entities;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name = "productos")
-public class Producto implements  Serializable {
+public class Producto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private  String nombre;
+
+    private String nombre;
     private Double precio;
 
-    @Column(name = "created-at")
+    @Column(name = "created_at")
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
