@@ -1,4 +1,26 @@
-# microservicios-spring
-🌳 Microservicios con Spring Boot y Spring Cloud Netflix Eureka
+# 🌳 Simple Crud build with Spring Boot
 
-📝 notes: [notion](https://fishy-wing-881.notion.site/Microservicios-con-Spring-Boot-e95bf02f58324a34aff4eee0c3ba093d "notion")
+
+### Post
+Crear nuevo auto 
+**values body**
+- id: Long
+- modelo: String
+- anno: int
+- capacidad int
+- precio: double
+
+`http://localhost:8080/api/v1/autos/{id}`
+
+
+### **GET**
+Buscar por Id
+`http://localhost:8080/api/v1/autos/{id}`
+
+### **PUT**
+Modificar precio de autos
+`http://localhost:8080/api/v1/autos/{id}/nuevoprecio/{price}`
+
+### **DELETE**
+Eliminar por Id
+`http://localhost:8080/api/v1/autos/{id}`
